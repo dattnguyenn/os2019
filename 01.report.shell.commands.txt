@@ -1,48 +1,41 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+hello world
+Changing password for mac.
+Old Password:
+Mon Apr  1 10:27:21 +07 2019
+MacBook-cua-mac.local
+i386
+Darwin MacBook-cua-mac.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64
+IOConsoleUsers: time(0) 0->0, lin 1, llk 0, 
+IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0
+FB0: Complete modeset
+AppleKeyStore: operation failed (pid: 72 sel: 75 ret: e00002ce '-536870194', -1, 100000)
+IOConsoleUsers: time(0) 0->0, lin 1, llk 0, 
+IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0
+loginwindow is not entitledFB0: Complete modeset
+FB0: Complete modeset
+IOConsoleUsers: time(0) 0->0, lin 1, llk 0, 
+IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0
+10:31  up  1:13, 2 users, load averages: 1.14 1.31 1.40
+mac      ttys000  Apr  1 09:29 
+mac
+mac      console  Apr  1 09:18 
+mac      ttys000  Apr  1 09:29
+uid=501(mac) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),701(1
+mac       console                   Mon Apr 16 14:00 - 11:49 (1+21:48)
+reboot    ~                         Mon Apr 16 14:00 
+shutdown  ~                         Mon Apr 16 13:59 
+mac       console                   Wed Apr 11 08:37 - 13:59 (5+05:22)
+reboot    ~                         Wed Apr 11 08:37 
+shutdown  ~                         Wed Apr 11 00:05 
+mac       console                   Mon Apr  9 19:08 - 00:05 (1+04:56)
+reboot    ~                         Mon Apr  9 19:07 
+shutdown  ~                         Mon Apr  9 19:07 
 
-\f0\fs22 \cf2 \cb3 \CocoaLigature0 hello world\
-Changing password for mac.\
-Old Password:\
-Mon Apr  1 10:27:21 +07 2019\
-MacBook-cua-mac.local\
-i386\
-Darwin MacBook-cua-mac.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64\
-IOConsoleUsers: time(0) 0->0, lin 1, llk 0, \
-IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0\
-FB0: Complete modeset\
-AppleKeyStore: operation failed (pid: 72 sel: 75 ret: e00002ce '-536870194', -1, 100000)\
-IOConsoleUsers: time(0) 0->0, lin 1, llk 0, \
-IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0\
-loginwindow is not entitledFB0: Complete modeset\
-FB0: Complete modeset\
-IOConsoleUsers: time(0) 0->0, lin 1, llk 0, \
-IOConsoleUsers: gIOScreenLockState 1, hs 0, bs 0, now 0, sm 0x0\
-10:31  up  1:13, 2 users, load averages: 1.14 1.31 1.40\
-mac      ttys000  Apr  1 09:29 \
-mac\
-mac      console  Apr  1 09:18 \
-mac      ttys000  Apr  1 09:29\
-uid=501(mac) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),701(1\
-mac       console                   Mon Apr 16 14:00 - 11:49 (1+21:48)\
-reboot    ~                         Mon Apr 16 14:00 \
-shutdown  ~                         Mon Apr 16 13:59 \
-mac       console                   Wed Apr 11 08:37 - 13:59 (5+05:22)\
-reboot    ~                         Wed Apr 11 08:37 \
-shutdown  ~                         Wed Apr 11 00:05 \
-mac       console                   Mon Apr  9 19:08 - 00:05 (1+04:56)\
-reboot    ~                         Mon Apr  9 19:07 \
-shutdown  ~                         Mon Apr  9 19:07 \
-\
-wtmp begins Mon Apr  9 19:06\
-Login    Name                 TTY  Idle  Login  Time   Office  Phone\
-mac      mac                 *con  1:15  Mon    09:18\
-mac      mac                  s00        Mon    09:29\
-10:33  up  1:16, 2 users, load averages: 0.87 1.11 1.30\
-USER     TTY      FROM              LOGIN@  IDLE WHAT\
-mac      console  -                 9:18    1:15 -\
-mac      s000     -                 9:29       - w}
+wtmp begins Mon Apr  9 19:06
+Login    Name                 TTY  Idle  Login  Time   Office  Phone
+mac      mac                 *con  1:15  Mon    09:18
+mac      mac                  s00        Mon    09:29
+10:33  up  1:16, 2 users, load averages: 0.87 1.11 1.30
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+mac      console  -                 9:18    1:15 -
+mac      s000     -                 9:29       - w
