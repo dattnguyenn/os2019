@@ -1,0 +1,12 @@
+MacBook-cua-mac:~ mac$ ls -la | grep list
+-rw-r--r--    1 mac   staff    109 Apr 24 08:47 filelist
+-rw-r--r--    1 mac   staff     20 Apr 24 08:46 filelist.gz
+MacBook-cua-mac:~ mac$ wc -l /etc/passwd
+     108 /etc/passwd
+MacBook-cua-mac:~ mac$ sysctl -n hw.memsize
+8589934592
+MacBook-cua-mac:~ mac$ sysctl hw.physicalcpu hw.logicalcpu
+hw.physicalcpu: 2
+hw.logicalcpu: 4
+MacBook-cua-mac:~ mac$ find . -name "*.jpg" | wc -l
+     220
