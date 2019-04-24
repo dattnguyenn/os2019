@@ -1,0 +1,16 @@
+MacBook-cua-mac:~ mac$ ps
+mac               9992   0.0  0.7  4764136  58248   ??  S    10:01AM   0:00.47 /Applications/Go
+mac               9949   0.0  0.2  4850240  14336   ??  S     9:50AM   0:00.11 /System/Library/
+mac               9928   0.0  0.0  4296240   1680 s001  S     9:42AM   0:00.07 -bash
+root              9927   0.0  0.1  4304432   5668 s001  Ss    9:42AM   0:00.03 login -pf mac
+mac               9926   0.0  0.4  4345588  32688   ??  S     9:41AM   0:00.63 /System/Library/
+mac               9925   0.0  1.9  4868548 161436   ??  S     9:41AM   0:05.27 /Applications/Go
+_spotlight        9920   0.0  0.1  4338228  11572   ??  S     9:40AM   0:00.08 /System/Library/
+_netbios          9919   0.0  0.1  4307596  10180   ??  SNs   9:40AM   0:00.35 /usr/sbin/netbio
+mac               9912   0.0  0.3  4347672  28472   ??  S     9:39AM   0:00.24 /System/Library/
+mac               9911   0.0  0.5  4364676  37940   ??  S     9:39AM   0:00.64 /System/Library/
+MacBook-cua-mac:~ mac$ ps aux | grep Word
+mac               7871   0.0  1.3  6697624 106356   ??  S    Thu02PM   5:15.60 /Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word
+MacBook-cua-mac:~ mac$ kill -s STOP 7871
+MacBook-cua-mac:~ mac$ kill -s CONT 7871
+MacBook-cua-mac:~ mac$ kill -s KILL 7871
