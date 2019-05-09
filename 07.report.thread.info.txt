@@ -1,0 +1,3 @@
+MacBook-cua-mac:~ mac$ ps -e | grep google-chrome
+ 6762 ttys000    0:00.01 grep google-chrome
+There is no nlwp on mac
