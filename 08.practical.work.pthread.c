@@ -50,13 +50,22 @@ item* initItem(char type, int amount, char unit){
 }
 
 void *producer(void *para) {
-    item *order1=initItem('5',8,'');
-    item *order2=initItem('4',1,'2');
-    item *order3=initItem('0',1,'0');
-    produce(order1);
-    produce(order2);
-    produce(order3);
+    item fc, Ff1, Ff2;
     
+    fc.type = 0;
+    fc.amount = 1;
+    fc.unit = 0;
+    Ff1.type = 1;
+    Ff1.amount = 2;
+    Ff1.unit = 1;
+    
+    Ff2.type = 1;
+    Ff2.amount = 3;
+    Ff2.unit = 1;
+    
+    produce(&fc);
+    produce(&Ff1);
+    produce(&Ff2);
 }
 
 void display(item* i) {
@@ -71,12 +80,14 @@ void *consumer(void *para) {
 int main() {
     pthread_t tid1,tid2;
     pthread_create(&tid1, NULL, producer, NULL);
-    pthread_join(tid1, NULL);
+  
     pthread_create(&tid2, NULL, consumer, NULL);
-    pthread_join(tid2, NULL);
     
-    printf("After produce: First: %d Last %d \n", first, last);
+    
+    printf(" First: %d Last %d \n", first, last);
     consume();
-    printf("After consume: First: %d Last %d \n", first, last);
+    printf(" First: %d Last %d \n", first, last);
+    pthread_join(tid1, NULL);
+    pthread_join(tid2, NULL);
     return 0;
 }
