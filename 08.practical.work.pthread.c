@@ -29,6 +29,7 @@ void produce(item *i) {
     }
     memcpy(&buffer[first], i, sizeof(item));
     first = (first + 1) % BUFFER_SIZE;
+    printf(" First: %d Last %d \n", first, last);
 }
 
 item *consume() {
@@ -38,14 +39,7 @@ item *consume() {
     }
     memcpy(i, &buffer[last], sizeof(item));
     last = (last + 1) % BUFFER_SIZE;
-    return i;
-}
-
-item* initItem(char type, int amount, char unit){
-    item* i = malloc(sizeof(item));
-    i->type = type;
-    i->amount = amount;
-    i->unit = unit;
+    printf(" First: %d Last %d \n", first, last);
     return i;
 }
 
@@ -55,6 +49,7 @@ void *producer(void *para) {
     fc.type = 0;
     fc.amount = 1;
     fc.unit = 0;
+    
     Ff1.type = 1;
     Ff1.amount = 2;
     Ff1.unit = 1;
@@ -66,6 +61,8 @@ void *producer(void *para) {
     produce(&fc);
     produce(&Ff1);
     produce(&Ff2);
+    
+    return NULL;
 }
 
 void display(item* i) {
@@ -75,18 +72,16 @@ void display(item* i) {
 void *consumer(void *para) {
     display(consume());
     display(consume());
+    
+    return NULL;
 }
 
 int main() {
     pthread_t tid1,tid2;
+    
     pthread_create(&tid1, NULL, producer, NULL);
-  
     pthread_create(&tid2, NULL, consumer, NULL);
     
-    
-    printf(" First: %d Last %d \n", first, last);
-    consume();
-    printf(" First: %d Last %d \n", first, last);
     pthread_join(tid1, NULL);
     pthread_join(tid2, NULL);
     return 0;
